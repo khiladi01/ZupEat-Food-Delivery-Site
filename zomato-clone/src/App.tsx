@@ -52,7 +52,7 @@ useEffect(() => {
           setFoodfilter([
 { name: "All", img: "/foodfilter/all.webp" },
 { name: "Chaat", img: "/foodfilter/chaat.webp" },
-{ name: "South Indian", img: "/southindian.png" },
+{ name: "South Indian", img: "/foodfilter/southindian.png" },
 { name: "Chinese", img: "/foodfilter/chinese.webp" },
 { name: "Dessert", img: "/foodfilter/desserts.webp" },
           ])
