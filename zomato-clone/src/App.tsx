@@ -150,20 +150,19 @@ const [searchQuery, setSearchQuery] = useState<allRestaurant[]>([]);
 const [searchInput, setSearchInput] = useState<string>("");
 
 useEffect(() => {
-          setSearchQuery([
-                       {img: "/public/restaurantfoodimg/dataisha.webp", restaurant: "Sri Isha Tiffins", time: 25, km: 2.4, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datamumbai.webp", restaurant: "Mumbai Pav Co - MPC", time: 30, km: 2.3, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/dataladu.avif", restaurant: "Ladu Gopal Cafe", time: 35, km: 4.6, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datafalahaal.png", restaurant: "Falahaar & Kota Kachori", time: 40, km: 1.9, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datadumping.jpg", restaurant: "Dumping Hood", time: 25, km: 1.2, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datafiltercoffee.webp", restaurant: "The Filter Coffee", time: 30, km: 2, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datafrozen.png", restaurant: "Frozen Bottle", time: 20, km: 1.3, rating: "3.9+"},
-                       {img: "/public/restaurantfoodimg/dataladdo.webp", restaurant: "Laddos", time: 20, km: 1.3, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datafresh.webp", restaurant: "Just Fresh Point", time: 30, km: 2.2, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/dataamaar.webp", restaurant: "Amaar Kashi", time: 25, km: 1, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datachole.png", restaurant: "Shyamji's Chole", time: 30, km: 2.2, rating: "4+"},
-                       {img: "/public/restaurantfoodimg/datapallavi.webp", restaurant: "Pallavi Restaurant", time: 25, km: 1, rating: "4+"}
-
+          setSearchQuery(() => [
+                       {img: "/restaurantfoodimg/dataisha.webp", restaurant: "Sri Isha Tiffins", time: 25, km: 2.4, rating: "4+"},
+                       {img: "/restaurantfoodimg/datamumbai.webp", restaurant: "Mumbai Pav Co - MPC", time: 30, km: 2.3, rating: "4+"},
+                       {img: "/restaurantfoodimg/dataladu.avif", restaurant: "Ladu Gopal Cafe", time: 35, km: 4.6, rating: "4+"},
+                       {img: "/restaurantfoodimg/datafalahaal.png", restaurant: "Falahaar & Kota Kachori", time: 40, km: 1.9, rating: "4+"},
+                       {img: "/restaurantfoodimg/datadumping.jpg", restaurant: "Dumping Hood", time: 25, km: 1.2, rating: "4+"},
+                       {img: "/restaurantfoodimg/datafiltercoffee.webp", restaurant: "The Filter Coffee", time: 30, km: 2, rating: "4+"},
+                       {img: "/restaurantfoodimg/datafrozen.png", restaurant: "Frozen Bottle", time: 20, km: 1.3, rating: "3.9+"},
+                       {img: "/restaurantfoodimg/dataladdo.webp", restaurant: "Laddos", time: 20, km: 1.3, rating: "4+"},
+                       {img: "/restaurantfoodimg/datafresh.webp", restaurant: "Just Fresh Point", time: 30, km: 2.2, rating: "4+"},
+                       {img: "/restaurantfoodimg/dataamaar.webp", restaurant: "Amaar Kashi", time: 25, km: 1, rating: "4+"},
+                       {img: "/restaurantfoodimg/datachole.png", restaurant: "Shyamji's Chole", time: 30, km: 2.2, rating: "4+"},
+                       {img: "/restaurantfoodimg/datapallavi.webp", restaurant: "Pallavi Restaurant", time: 25, km: 1, rating: "4+"}
           ])
 })
 
@@ -220,15 +219,15 @@ const numberRefthree = useRef<HTMLSpanElement | null>(null);
  const[testimonialdata , setTestimonialdata] = useState<testimonialData[]>([])
 
  useEffect(() => {
-          setTestimonialdata([
-                            {img: "/public/datauser/datauserone.jpg", name: "rohit kumar", review: "Great food and quick delivery", rating: 4}, 
-                            {img: "/public/datauser/datausertwo.jpg", name: "subham kumar", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datauserthree.jpg", name: "sanu Kumar", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datauserfour.jpg", name: "ritik Kumar", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datauserfive.jpeg", name: "sanjay Kumar", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datausersix.jpg", name: "ritu kumari", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datauserseven.jpg", name: "aadya kumari", review: "Great food and quick delivery", rating: 4},
-                            {img: "/public/datauser/datausereight.jpg", name: "nisha kumari", review: "Great food and quick delivery", rating: 4},      
+          setTestimonialdata(() => [
+                            {img: "/datauser/datauserone.jpg", name: "rohit kumar", review: "Great food and quick delivery", rating: 4}, 
+                            {img: "/datauser/datausertwo.jpg", name: "subham kumar", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datauserthree.jpg", name: "sanu Kumar", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datauserfour.jpg", name: "ritik Kumar", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datauserfive.jpeg", name: "sanjay Kumar", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datausersix.jpg", name: "ritu kumari", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datauserseven.jpg", name: "aadya kumari", review: "Great food and quick delivery", rating: 4},
+                            {img: "/datauser/datausereight.jpg", name: "nisha kumari", review: "Great food and quick delivery", rating: 4},
           ])
  })
 
