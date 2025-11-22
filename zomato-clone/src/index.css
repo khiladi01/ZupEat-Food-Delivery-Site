@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* adding background image on navigation */
+#navback{
+  background-image: url('./assets/nav/navback.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+/* brightness */
+#navback::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+/* brightness of content */
+#navback > * {
+  position: relative;
+  z-index: 2;
+  color: white; 
+  padding: 20px;
+}
+
+#contactback{
+  background-image: url('./assets/contact/contactback.webp');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* brightness */
+#contactback::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+/* brightness of content */
+#contactback > * {
+  position: relative;
+  z-index: 2;
+  color: white; 
+  padding: 20px;
+}
